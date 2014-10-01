@@ -35,10 +35,10 @@ h = AlphaH/(AlphaH + BetaH);
 
 
 %% Initialize Injected Current %%
-%I_inj_init = 0;                                                  %% Steady-state neuron. USE FOR PART 1 - comment out every other I_inj line except this one if using for part 1
+I_inj = [zeros(1, 100/dt+1)];                                     %% Steady-state neuron. USE FOR PART 1 - comment out every other I_inj line except this one if using for part 1
                                                                   %% adjusted to 50 uA/cm^2 to get significant response
 %I_inj = [50*ones(1,(.5/dt)+1), zeros(1, 100/dt - .5/dt)];        %%Injected pulse of 5 uA/cm^2 - USE FOR PART 2 - adjusted to 50 uA/cm^2 
-I_inj = [50*ones(1,100/dt + 1)];                                  %% Constant current of 5 uA/cm^2 - USE FOR PART 3 - adjusted to 50 uA/cm^2 to get significant response
+%I_inj = [50*ones(1,100/dt + 1)];                                 %% Constant current of 5 uA/cm^2 - USE FOR PART 3 - adjusted to 50 uA/cm^2 to get significant response
 
 
 %% Initialize Rates of Change Vectors %%%
